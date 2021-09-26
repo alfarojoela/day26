@@ -35,9 +35,32 @@ numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 # 🚨 Do Not Change the code above
 
 #Write your 1 line code 👇 below:
-
+#result = [new_item for item in list if test]
 result = [number for number in numbers if number%2 == 0]
 
 #Write your code 👆 above:
 
 print(result)
+
+
+
+# numbers1 = open(".file1.txt")
+#
+# numbers1_list = numbers1.readlines()
+
+with open("file1.txt") as numbers1_file:
+    numbers1 = numbers1_file.readlines()
+
+with open("file2.txt") as numbers2_file:
+    numbers2 = numbers2_file.readlines()
+
+
+
+result = [int(num) for num in numbers1 if num in numbers2]
+
+# print(result_in_string)
+# Write your code above 👆
+print("LIST OF NUMBERS IN COMMON BETWEEN file1 and file2")
+print(result)
+
+

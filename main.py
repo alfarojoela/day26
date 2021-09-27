@@ -67,4 +67,29 @@ result = [int(num) for num in numbers1 if num in numbers2]
 print("LIST OF NUMBERS IN COMMON BETWEEN file1 and file2")
 print(result)
 
+#DICTIONARY COMPREHENSION
+#new_dict = {new_key:new_value for item in list}
+#another way:
+##new_dict = {new_key:new_value for (key,value) in dict.items()}
+##new_dict = {new_key:new_value for (key,value) in dict.items() if test}
+
+
+#DICTIONARY PRACTICE
+import random
+names = ['Alex', 'Beth', 'Caroline', 'Dave', 'Eleanor', 'Freddie']
+
+# students_scores = {new_key:new_value for item in list_or_tuple_or_range_or_string}
+student_scores = {student:random.randint(1, 100) for student in names}
+
+print(names)
+print(student_scores)
+
+#passed_student = {new_key:new_value for (key, value) in dictionary.items() if test}
+passed_students = {student:score for (student, score) in student_scores.items() if score >=60}
+
+
+
+print("PASSED STUDENTS:")
+print(passed_students)
+print(student_scores.items())
 

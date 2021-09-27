@@ -167,6 +167,14 @@ for (index, row) in student_data_frame.iterrows():
     if row.student == "Angela":
         print(row.score)
 
+#example of iteration hint
+#{new_key:new_value for (index, row) in df.iterrows()}
+
+#TODO: 1 create a dictionary in format
+#{"A": "Alfa", "B": "Bravo"}
+
+#TODO 2. CREATE a list of phonetic words for user's name
+
 
 #print(result)
 

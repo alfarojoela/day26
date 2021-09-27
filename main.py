@@ -55,7 +55,11 @@ with open("file2.txt") as numbers2_file:
     numbers2 = numbers2_file.readlines()
 
 
+#converts num variables to be added to result list to ints
+#second reference to num is iteration of numbers1 list
+#if condition checks if num elements in numbers2 list.
 
+#newlist = [newlistitems for items in list1 if items are in list2
 result = [int(num) for num in numbers1 if num in numbers2]
 
 # print(result_in_string)
